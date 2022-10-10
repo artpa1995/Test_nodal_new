@@ -1,0 +1,30 @@
+
+@mixin underline($color: '', $align: '', $width: 45px, $height: 2px, $top: 7px) {
+  * > & {
+    position: relative;
+  }
+
+  &::after {
+    content: " ";
+    display: flex;
+    width: $width;
+    height: $height;
+    position: absolute;
+    bottom: 0;
+    transform: translateY($top);
+
+    @if ($color == 'green') {
+      background: linear-gradient(256.38deg, var( --color8) -47.45%, var(--color2) 146.11%);
+    } @else {
+      background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var(--color-head_r2) 97.28%)
+    }
+
+    @if ($align == 'right') {
+      right: 0;
+    } @else if ($align == 'center') {
+      left: 50%;
+      transform: translate(-50%, $top)
+    }
+  }
+
+}
