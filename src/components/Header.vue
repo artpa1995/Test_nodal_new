@@ -155,9 +155,8 @@ export default {
   color:red;
   font-style: italic;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1rem;
-  text-align: center;
   border-radius:0.313rem;
   display: none;
   width: 100%;
@@ -169,9 +168,8 @@ export default {
   color:green;
   font-style: italic;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 0.9rem;
-  text-align: center;
   border-radius:0.313rem;
   display: none;
   width: 100%;
