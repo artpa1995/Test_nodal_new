@@ -45,7 +45,7 @@ export default {
 .btn.outline {
   background: unset;
   box-shadow: 0px 0px 2px var(--color8), 0px 0px 6px rgba(225, 153, 252, 0.18), 0px 0px 6px rgba(225, 153, 252, 0.2) inset;
-  color: var(--color8);
+  color: var(--color5);
   opacity: 0.8;
   &:hover {
     background: linear-gradient(90deg, rgba(146, 64, 252, 0.63) 0%, rgba(225, 153, 252, 1) 100%);
