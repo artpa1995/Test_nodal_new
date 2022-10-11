@@ -153,10 +153,9 @@ export default {
 .erorrs{
   list-style: none;
   color:red;
-  background: #ff000021;
   font-style: italic;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1rem;
   text-align: center;
   border-radius:0.313rem;
@@ -168,11 +167,10 @@ export default {
   .success{
   list-style: none;
   color:green;
-  background: #4bea6321;
   font-style: italic;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 0.9rem;
   text-align: center;
   border-radius:0.313rem;
   display: none;
