@@ -14,13 +14,15 @@
                     <div class="line"></div>
                     <p class="content_text">Subscrive to recieve 10% off promocode plus exclusive offers and deals</p>
                     <div class="email_content">
-                      <input type="email" id="email" class="email" name="email" v-model.trim="email">
-                      <p class="erorrs" :class="{ empty_fild:email_error}">Please write down your EMAIL</p>
-                      <p class="erorrs" :class="{ empty_fild:email_invalid_error}">Please write down your correct EMAIL</p>
-                      <p class="erorrs" :class="{ empty_fild:duplicate_email_error}">You have already subscribed to the newsletter</p>
-                      <p class="erorrs" :class="{ empty_fild:check_error}">Subscribe is not possible without your consent.</p>
-                      <p class="success" :class="{ success_fild:success}">You have successfully subscribed to the newsletter.</p>
                       <p class="label_email">Email-adress</p>
+                      <input type="email" id="email" class="email" name="email" v-model.trim="email">
+                      <div class="erorrs_block">
+                        <p class="erorrs" :class="{ empty_fild:email_error}">Please write down your EMAIL</p>
+                        <p class="erorrs" :class="{ empty_fild:email_invalid_error}">Please write down your correct EMAIL</p>
+                        <p class="erorrs" :class="{ empty_fild:duplicate_email_error}">You have already subscribed to the newsletter</p>
+                        <p class="erorrs" :class="{ empty_fild:check_error}">Subscribe is not possible without your consent.</p>
+                        <p class="success" :class="{ success_fild:success}">You have successfully subscribed to the newsletter.</p>
+                      </div>
                     </div>
                     <Buttons   @click="Subscribe" :value=" 'Subscribe' " />
                     <div class="form_check">
@@ -43,13 +45,12 @@
     </div>
   </div>
   
-<!-- <Modal class="modal" :class="iconClass"  @click=" close_modal"></Modal> -->
 </template>
 
 <script>
 
 import Buttons from '@/components/Buttons.vue';
-import Modal from '@/components/Modal.vue';
+
 
 
 export default {
@@ -59,7 +60,7 @@ export default {
   },
   components: {
     Buttons,
-    Modal,
+
   },
   data() {
     return {
@@ -145,6 +146,10 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Overpass:wght@400;700&display=swap');
 
+
+.erorrs_block{
+  margin-top: 0.3rem;
+}
 .erorrs{
   list-style: none;
   color:red;
@@ -213,10 +218,13 @@ export default {
 }
 
 .form_check_text {
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  letter-spacing: 0.1em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -267,7 +275,6 @@ export default {
   background-size: 100%;
   width: 100%;
   max-width: 54rem;
-  height: 100%;
   -webkit-clip-path: polygon(81% 0, 100% 40%, 100% 201%, 0 0%);
   clip-path: polygon(81% 0, 100% 40%, 100% 201%, 0 0%);
 }
@@ -279,6 +286,7 @@ export default {
   padding-left: 1.25rem;
   padding-top: 2rem;
   box-sizing: border-box;
+  height: 31.875rem;
 }
 
 .procent_text{
@@ -379,10 +387,6 @@ color: #828688;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 845px) {
  
   .close{
@@ -411,10 +415,5 @@ color: #828688;
 }
   
 }
-@media screen and (max-width: 340px) {
 
-}
-@media screen and (max-width: 332px) {
- 
-}
 </style>

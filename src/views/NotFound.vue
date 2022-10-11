@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header head_text="not_found" content_text="" page=""/>
+    <h1>page not found</h1>
     <Footer/>
   </div>
 </template>

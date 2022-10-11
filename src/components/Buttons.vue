@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
 .btn {
   position: relative;
-  margin-top: 36px;
+  margin-top: 1rem;
   padding: .75rem 2.4rem;
 
   color: white;
@@ -73,8 +73,8 @@ export default {
     content: "";
     display: block;
     position: absolute;
-    width: 28px;
-    height: 28px;
+    width: 1.8rem;
+    height: 1.8rem;
     top: 50%;
     left: 50%;
     background-position: center;
@@ -103,8 +103,6 @@ export default {
     transform: translate(-50%, -47%) rotate(1turn);
   }
 }
-
-/* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
   .btn {
     padding: .6rem 2rem;
