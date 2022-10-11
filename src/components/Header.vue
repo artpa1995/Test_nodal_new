@@ -217,8 +217,8 @@ export default {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.9rem;
+  line-height: 1rem;
   display: flex;
   align-items: center;
   cursor: pointer;
